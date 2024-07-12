@@ -193,4 +193,219 @@ print(min(numeros))  # Salida: 5
  
 Estas son solo algunas de las muchas funciones internas útiles que Python proporciona de forma predeterminada. Puedes explorar más funciones internas en la documentación oficial de Python.
 
+## Tipos de funciones
+def saludo (nombre)
+    print(f#bienvenido {nombre}")
+### Funciones anonimas /Funciones lambdass
+### funciones callback
+
+### programacion Funcional
+la progrmacion funcional no requiere que sepas cmo se desarrolla y ejecutra el procesamiento de la informacion
+**ejemplo**
+```phyton
+#### averiguar sobre map(), filter(), reduce()
+
+# MAP
+
+Map es un contenedor que almacena elementos en pares clave-valor. Es similar a las colecciones en Java, los arreglos asociativos en PHP, o los objetos en JavaScript. Aquí están los principales beneficios de usar map : map solo almacena claves únicas, y las propias claves están ordenadas.
+
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+int main (){
+  map<char,int> primero;
+  
+  //inicializando
+  primero['a']=10;
+  primero['b']=20;
+  primero['c']=30;
+  primero['d']=40;
+  
+   map<char, int>::iterator eso;
+   for(eso=primero.begin(); eso!=primero.end(); ++eso){
+      cout << eso->primero << " => " << eso->segundo << '\n';
+   }
+   
+  return 0;
+}
+
+#FILTER 
+
+El método filter en JavaScript, al igual que el método forEach y el método map, es una función que pertenece al objeto array y por ende nos permite manipular sus elementos. Ya hemos visto antes que el método forEach nos permite recorrer los elementos de un array y aplicar a cada uno de ellos una función.
+
+const numeros = [ -5, 7, -10, 22, 3, -1];
+
+    
+#REDUCE
+
+El método reduce es un método de arrays en JavaScript que te permite reducir un array a un solo valor, este array puede contener cualquier tipo de dato un número, un cadena de texto, un objeto o incluso un nuevo array.
+
+
+  let valores = [1, 2, 3, 4, 5];
+  let resultado = valores.reduce((a,b) => a+b);
+  console.log(resultado);
+
+```
+### ACTIVIDAD 
+## AVERIGUAR SOBRE MODULOS Y PAQUETES EN PHYTON
+Los módulos y paquetes en Python son elementos fundamentales para organizar y estructurar el código de un programa de manera eficiente. Aquí te proporciono información detallada sobre módulos y paquetes en Python, junto con ejemplos ilustrativos:
+ 
+Módulos en Python:
+ 
+- Un módulo en Python es un archivo que contiene definiciones y declaraciones de Python, como funciones, clases y variables.
+- Los módulos permiten organizar el código de forma modular para facilitar su reutilización y mantenimiento.
+- Para utilizar un módulo en Python, se puede importar utilizando la palabra clave  import .
+ 
+Ejemplo de un módulo en Python llamado  mimodulo.py :
+ 
+python
+ Copiar
+# mimodulo.py
+def saludar(nombre):
+    print(f"Hola, {nombre}!")
+
+def sumar(a, b):
+    return a + b
+ 
+ 
+Paquetes en Python:
+ 
+- Un paquete en Python es una colección de módulos relacionados que se almacenan en un directorio.
+- Los paquetes permiten organizar y estructurar el código de manera jerárquica.
+- Para indicar que un directorio es un paquete en Python, debe contener un archivo especial llamado  _init_.py .
+ 
+Ejemplo de un paquete en Python llamado  mipaquete  que contiene los módulos  modulo1.py  y  modulo2.py :
+ 
+
+ Copiar
+mipaquete/
+    _init_.py
+    modulo1.py
+    modulo2.py
+ 
+ 
+Contenido del archivo  modulo1.py :
+ 
+python
+ Copiar
+# modulo1.py
+def restar(a, b):
+    return a - b
+ 
+ 
+Contenido del archivo  modulo2.py :
+ 
+python
+ Copiar
+# modulo2.py
+def multiplicar(a, b):
+    return a * b
+ 
+ 
+Para importar y utilizar los módulos y paquetes en Python, se pueden realizar las siguientes operaciones:
+ 
+python
+ Copiar
+# Importar un módulo
+import mimodulo
+
+mimodulo.saludar("Cici")
+resultado = mimodulo.sumar(3, 5)
+print(resultado)
+
+# Importar un módulo desde un paquete
+from mipaquete import modulo1
+
+resultado_resta = modulo1.restar(10, 3)
+print(resultado_resta)
+
+# Importar un paquete y un módulo desde el paquete
+from mipaquete import modulo2
+
+resultado_multiplicacion = modulo2.multiplicar(4, 6)
+print(resultado_multiplicacion)
+
+# DIFERENCIA ENTRE MODULOS Y PAQUETES
+
+En Python, los términos "módulos" y "paquetes" son fundamentales para organizar y estructurar el código de un programa de manera eficiente. Aquí te explico las diferencias entre ambos con ejemplos:
+ 
+Módulos en Python:
+ 
+- Un módulo en Python es un archivo que contiene definiciones y declaraciones de Python. Puede contener funciones, clases y variables.
+- Los módulos permiten organizar el código de forma modular para facilitar su reutilización y mantenimiento.
+- Para utilizar un módulo en Python, se puede importar utilizando la palabra clave  import .
+ 
+Ejemplo de un módulo en Python llamado  mimodulo.py :
+ 
+python
+ Copiar
+# mimodulo.py
+def saludar(nombre):
+    print(f"Hola, {nombre}!")
+
+def sumar(a, b):
+    return a + b
+ 
+ 
+Paquetes en Python:
+ 
+- Un paquete en Python es una colección de módulos relacionados que se almacenan en un directorio.
+- Los paquetes permiten organizar y estructurar el código de manera jerárquica.
+- Para indicar que un directorio es un paquete en Python, debe contener un archivo especial llamado  _init_.py .
+ 
+Ejemplo de un paquete en Python llamado  mipaquete  que contiene los módulos  modulo1.py  y  modulo2.py :
+ 
+
+ Copiar
+mipaquete/
+    _init_.py
+    modulo1.py
+    modulo2.py
+ 
+ 
+Contenido del archivo  modulo1.py :
+ 
+python
+ Copiar
+# modulo1.py
+def restar(a, b):
+    return a - b
+ 
+ 
+Contenido del archivo  modulo2.py :
+ 
+python
+ Copiar
+# modulo2.py
+def multiplicar(a, b):
+    return a * b
+ 
+ 
+Para importar y utilizar los módulos y paquetes en Python, se pueden realizar las siguientes operaciones:
+ 
+python
+ Copiar
+# Importar un módulo
+import mimodulo
+
+mimodulo.saludar("Cici")
+resultado = mimodulo.sumar(3, 5)
+print(resultado)
+
+# Importar un módulo desde un paquete
+from mipaquete import modulo1
+
+resultado_resta = modulo1.restar(10, 3)
+print(resultado_resta)
+
+# Importar un paquete y un módulo desde el paquete
+from mipaquete import modulo2
+
+resultado_multiplicacion = modulo2.multiplicar(4, 6)
+print(resultado_multiplicacion)
+
+
+
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

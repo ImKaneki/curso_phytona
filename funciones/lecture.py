@@ -47,4 +47,84 @@ return dict(
     edad=edad   
 )
 print(persona(nombre,edad)
+    nueva_lista
+    nueva_lista
+suma(4,7,8,5,2,4)
+
+##ejemplos de lambda
+saludo=lambda:"hola"
+print(saludo("ruth","castillo"))
+# crear un programa anonimo que reciba como parametro una lista de 5 numeros y retorne dos listas una con los numeros pares y otra con numeros impares
+
+def generaPares(m)
+ n=5
+lista=[]
+while n<=m:
+lista.append(n*2)
+n+=1
+return lista
+print(generarPares(10))
+
+
+lista=[4,7,5,3,47,2,10,8,10]
+pares=lambda l: [n for n in lista if n%2==0]
+impares=lambda l: [n for n in lista if n%2==0]
+print(pares(lista))
+print(impares(lista))
+
+
+unt(input())
+
+def mensaje(m)
+    print(m)
+def pedir_nombre():
+    nombre=input("ingresa tu nombre")
+    return nombre
+mensaje(pedir_nombre())
+
+#MAP
+lista=[4,7,8,5,2]
+map(lambda x:x+1,lista) #por defecto retorna una lista
+
+# filter
+# tengo una lista de alumnos que todos ellos aprobaron y pasan al tercer semestre,
+#problema en mi lista todos estan con el segundo semestre por lo que tendremos que crear una solucion que cambie el campo
+# de semestre  de 2 a 3
+
+"nombre":"abel",
+"edad":36,
+"semestre":2
+
+"nombre":"antohny",
+"edad":40,
+"semestre":2
+
+"nombre":"edith",
+"edad":50,
+"semestre":2
+]
+def objeto(e):
+    if "semestre" in e:
+        e["semestre"]=e["semestre"]+1
+    return [
+        e
+    ]
+
+
+alumnos_actualizados=list(map(lambda e:e["semestre"]+1,lista_alumnos))
+print(alumnos_actualizados)
+# filter 
+# devolver los numeros pares de una lista
+lista=[4,8,2,5,7,10,6,5,3,20]
+nueva_lista=list(filter(lambdax:x%2==0,lista))
+print(nueva_lista)
+lista_alumnos=[
+    
+
+
+
+
+
+
+
        
