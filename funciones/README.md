@@ -56,7 +56,7 @@ Para definir una funcion en phyton primero utilizaremos la palabra reservada ´d
 >   return ["hola",45]
 >
 > ## Parametros y argumentos 
-> si una funcion no dispusiera de valores de entrada estaria limitada en su actuaccon es por ello que los parametros los permiten variar los datos que consumen una funcin para obtener distintos resultados 
+> si una funcion no dispusiera de valores de entrada estaria limitada en su actuacion es por ello que los parametros los permiten variar los datos que consumen una funcion para obtener distintos resultados 
 > ** ejemplo
 > * creatr una funcion que recibe un valor numerico y retorna su raiz cuadrado*
 > python
@@ -74,7 +74,7 @@ ejm(4,5,6)
 
 ### Argumentos nominales
 
-En esta aproximacion los argumentos no son copiados enn un orden especifico si no que **se asignan en cada parametro** , ellos nos permite evitar el problema de cococer o recordar cual es el orden de los parametros en la definicion de la funcion.
+En esta aproximacion los argumentos no son copiados en un orden especifico si no que **se asignan en cada parametro** , ellos nos permite evitar el problema de cococer o recordar cual es el orden de los parametros en la definicion de la funcion.
 para utilizarlo, basta con realizar una asginacion de cada argumento en la propia llamada a la funcion.
 
 **ejemplo**
@@ -102,7 +102,7 @@ def build_cpu(familia,num,core,frecuencia):
 build_cpu("intel",4,2.7)
 ``` 
 ## Parametros por defecto
-es posible especificar **valores por defecto** en los parametros de una funcion , en el caso de que no se poroporcione un valor al argumento en la llamada a la funcion , el parametro corr3espondiente tomara el valor definido por defecto.
+es posible especificar **valores por defecto** en los parametros de una funcion , en el caso de que no se poroporcione un valor al argumento en la llamada a la funcion , el parametro correspondiente tomara el valor definido por defecto.
 *+ejemplo**
 ```python
 def alumnos(nom,app,estado="aprobado")
