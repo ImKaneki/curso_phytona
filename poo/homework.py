@@ -45,4 +45,3 @@ class clase_agencia:
         print("estoy viendo el proceso de mi boleto")
 juan=banco("juan","garriazo auccasi",7446489,122,"2025/8/22")
 
-
