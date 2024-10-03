@@ -28,21 +28,21 @@ print(juan.retirar())
 # #sus metodos seran ingresar origen, ingresar destino, cancelar viaje, ver estado de pasaje
 class clase_agencia:
     #atributos
-    def _init_(self,nombre,apellidos,dni,numero_asiento,fecha_viaje):
+    def __init__(self,nombre,apellidos,dni,numero_asiento,fecha_viaje):
         self.nombre=nombre
         self.apellidos=apellidos
         self.dni=dni
         self.numero_asiento=numero_asiento
         self.fecha_viaje=fecha_viaje
     #metodos
-    def ingresar_origen(self):
-        print("estoy ingresando de donde viajo")
+    def ingresar_origen(self,lugar):
+        print("estoy ingresando de donde vengo):",lugar)
     def ingresar_destino(self):
-        print("estoy ingresando de donde voy")
+        print("estoy ingresando a donde quiero ir")
     def cancelar_viaje(self):
-        print("estoy cancelando mi viaje ")
+        print("estoy cancelando mi vuelo ")
     def ver_estado_pasaje(self):
-        print("estoy viendo el estado de mi pasaje")
-juan=banco("juan","garriazo auccasi",7446489,122,2025/1/22)
-print(juan.ingresar_destino())
+        print("estoy viendo el proceso de mi boleto")
+juan=banco("juan","garriazo auccasi",7446489,122,"2025/8/22")
+
 
