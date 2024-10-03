@@ -21,5 +21,28 @@ class banco:
 juan=banco("juan","perez olarte",7455125,1220,1222)
 print(juan.retirar())
 
-#Ejercicio 02 I #Crear una clase agencia #con sus atributos nombre y apellidos del pasajero dni numero de asiento fecha de viaje 
+
+#Ejercicio 02 I 
+# #Crear una clase agencia 
+# #con sus atributos nombre y apellidos del pasajero dni numero de asiento fecha de viaje 
 # #sus metodos seran ingresar origen, ingresar destino, cancelar viaje, ver estado de pasaje
+class clase_agencia:
+    #atributos
+    def _init_(self,nombre,apellidos,dni,numero_asiento,fecha_viaje):
+        self.nombre=nombre
+        self.apellidos=apellidos
+        self.dni=dni
+        self.numero_asiento=numero_asiento
+        self.fecha_viaje=fecha_viaje
+    #metodos
+    def ingresar_origen(self):
+        print("estoy ingresando de donde viajo")
+    def ingresar_destino(self):
+        print("estoy ingresando de donde voy")
+    def cancelar_viaje(self):
+        print("estoy cancelando mi viaje ")
+    def ver_estado_pasaje(self):
+        print("estoy viendo el estado de mi pasaje")
+juan=banco("juan","garriazo auccasi",7446489,122,2025/1/22)
+print(juan.ingresar_destino())
+
